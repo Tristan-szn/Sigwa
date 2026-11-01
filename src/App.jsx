@@ -172,18 +172,7 @@ export default function App() {
           </>
         )}
 
-        {activeTab === 'map' && (
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 h-[600px] flex flex-col items-center justify-center text-center">
-            <Compass className="w-16 h-16 text-blue-500 mb-4 animate-spin-slow" />
-            <h3 className="text-xl font-bold text-white">Interactive Live Map & PAR Boundary</h3>
-            <p className="text-sm text-slate-400 max-w-md mt-2">
-              This section is configured for React-Leaflet with the official Philippine Area of Responsibility (PAR) polygon layer.
-            </p>
-            <span className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium shadow-lg shadow-blue-600/30">
-              Ready to plug in Leaflet Map Layers
-            </span>
-          </div>
-        )}
+        <WeatherMap/>
 
         {activeTab === 'news' && (
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
